@@ -1,0 +1,3 @@
+Enter the schema name: sales
+Enter the table name: orders
+Enter your English question: What is the total revenue from orders placed in 2023?

@@ -1,0 +1,12 @@
+tiktoken
+chromadb
+pypdf
+langchain-community
+langchain-core
+langchain-openai
+langchain-text-splitters
+beautifulsoup4
+pickle
+python-dotenv
+streamlit
+numpy

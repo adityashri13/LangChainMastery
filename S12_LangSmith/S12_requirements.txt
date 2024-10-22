@@ -1,0 +1,7 @@
+openai
+langsmith
+python-dotenv
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-openai

@@ -1,0 +1,4 @@
+typing
+langchain-core
+langchain-openai
+pprint

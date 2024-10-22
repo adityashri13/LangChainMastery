@@ -1,0 +1,6 @@
+langchain-core
+langchain-openai
+openai
+pydantic
+json
+re

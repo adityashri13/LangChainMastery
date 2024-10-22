@@ -1,0 +1,6 @@
+langchain
+langchain_openai
+PyPDF2
+pprintpp
+python-dotenv
+langchain_community
