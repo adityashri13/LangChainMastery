@@ -3,11 +3,6 @@ from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import pickle
 
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = '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'
-os.environ["LANGCHAIN_PROJECT"] = "langchain-first-project"
-
 # Get the directory where the current script is located
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
