@@ -11,7 +11,7 @@ from langchain_core.runnables.passthrough import RunnableAssign
 # --------------------------------------------
 
 # Define the OpenAI model to be used
-model = ChatOpenAI(model="gpt-4o-mini-0125")  # Use "gpt-4o-mini" if you have access
+model = ChatOpenAI(model="gpt-4o-mini")  # Use "gpt-4o-mini" if you have access
 
 # Define a Pydantic model to structure and validate the transcript information
 class VideoTranscriptInfo(BaseModel):

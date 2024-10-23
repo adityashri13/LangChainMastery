@@ -19,7 +19,7 @@ def get_session_history(client_id: str, event_id: str):
     return SQLChatMessageHistory(session_id=session_id, connection=engine)
 
 # Set up the ChatOpenAI model
-model = ChatOpenAI(model="gpt-4o-mini-0125")
+model = ChatOpenAI(model="gpt-4o-mini")
 
 # Define the prompt template for the event planning assistant
 prompt = ChatPromptTemplate.from_messages(

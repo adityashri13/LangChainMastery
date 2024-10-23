@@ -16,7 +16,7 @@ file_path = os.path.join(script_directory, data_folder, file_name)
 print("File Path:", file_path)
 
 # Load the PDF document using PyPDFLoader
-loader = TextLoader(file_path)
+loader = TextLoader(file_path, encoding='UTF-8')
 data_docs = loader.load()
 
 # Print the type and content of the loaded data

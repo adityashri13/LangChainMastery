@@ -14,7 +14,7 @@ file_name = 'Olympic_History_Part_1.txt'
 file_path = os.path.join(script_directory, data_folder, file_name)
 
 # Load the document using TextLoader
-loader = TextLoader(file_path)
+loader = TextLoader(file_path,encoding='UTF-8')
 data_docs = loader.load()
 
 with open("data_docs.txt", "w") as output:

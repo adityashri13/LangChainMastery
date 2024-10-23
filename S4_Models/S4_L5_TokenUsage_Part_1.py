@@ -17,7 +17,7 @@ messages = [
 
 # -------MODEL
 # Initialize the OpenAI model using LangChain (model)
-model_name = "gpt-4o-mini-0125"
+model_name = "gpt-4o-mini"
 chat_model = ChatOpenAI(model=model_name)
 
 # Generate the response from the model (model)

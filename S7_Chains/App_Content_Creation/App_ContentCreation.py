@@ -13,7 +13,7 @@ import json
 
 
 # Define the OpenAI model to be used
-model = ChatOpenAI(model="gpt-4o-mini-0125")
+model = ChatOpenAI(model="gpt-4o-mini")
 
 # --------------------------------------------
 # --------- Content and Hashtag Chain --------

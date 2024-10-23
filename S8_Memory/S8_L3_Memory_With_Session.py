@@ -16,7 +16,7 @@ def get_session_history(session_id: str):
     return SQLChatMessageHistory(session_id=session_id, connection=engine)
 
 # Set up the ChatOpenAI model
-model = ChatOpenAI(model="gpt-4o-mini-0125")
+model = ChatOpenAI(model="gpt-4o-mini")
 
 parser = StrOutputParser()
 

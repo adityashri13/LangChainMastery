@@ -1,0 +1,11 @@
+# Set default behavior to normalize
+* text=auto
+
+# Force LF line endings for all text files
+*.py text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.ipynb text eol=lf
+*.js text eol=lf
+*.css text eol=lf

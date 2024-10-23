@@ -19,7 +19,7 @@ data_folder = 'data/olympics'
 file_name = 'Olympic_History_Part_1.txt'
 file_path = os.path.join(script_directory, data_folder, file_name)
 
-loader = TextLoader(file_path)
+loader = TextLoader(file_path, encoding='UTF-8')
 data_docs = loader.load()
 
 # =====================

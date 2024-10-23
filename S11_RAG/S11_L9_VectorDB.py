@@ -11,7 +11,7 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Define the name of the data folder and the file
 data_folder = 'data/olympics'
-file_name = 'Olympic_History_Part_1.txt'
+file_name = 'Olympic_History_Part_1.pdf'
 
 # Construct the file path
 file_path = os.path.join(script_directory, data_folder, file_name)

@@ -3,7 +3,7 @@ from langchain_openai import ChatOpenAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.callbacks import get_openai_callback
+
 
 # --------- PDF Text Extraction --------------
 def extract_text_from_pdf(pdf_file_path) -> list:

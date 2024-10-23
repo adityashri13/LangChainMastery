@@ -47,7 +47,7 @@ chat_prompt_template = ChatPromptTemplate.from_messages(
 )
 
 # Create an instance of the ChatOpenAI model
-model = ChatOpenAI(model="gpt-4o-mini-0125", verbose=True)
+model = ChatOpenAI(model="gpt-4o-mini", verbose=True)
 
 # Create a chain with the chat prompt template, model, and parser
 chain = chat_prompt_template | model | parser

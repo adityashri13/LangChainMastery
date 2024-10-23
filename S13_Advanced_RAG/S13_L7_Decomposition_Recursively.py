@@ -29,7 +29,7 @@ file_path = os.path.join(script_directory, data_folder, file_name)
 # =====================
 # 3. Load the Data
 # =====================
-loader = TextLoader(file_path)
+loader = TextLoader(file_path, encoding='UTF-8')
 data_docs = loader.load()
 
 # =====================

@@ -97,7 +97,7 @@ for msg in messages:
     print(msg)
 
 # Create an instance of the ChatOpenAI model
-chat_model = ChatOpenAI(model="gpt-4o-mini-turbo", temperature=0.0)
+chat_model = ChatOpenAI(model="gpt-4o-mini", temperature=0.0)
 
 # Generate the response from the chat model using the messages
 chat_model_response = chat_model.invoke(messages)

@@ -13,7 +13,7 @@ load_dotenv()
 
 def initialize_openai_model():
     """Initialize the OpenAI model with the API key from the environment."""
-    return ChatOpenAI(temperature=0.5, model_name="gpt-4o-mini-0125")
+    return ChatOpenAI(temperature=0.5, model_name="gpt-4o-mini")
 
 llm = initialize_openai_model()
 

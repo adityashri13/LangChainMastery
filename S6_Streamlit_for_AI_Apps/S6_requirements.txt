@@ -2,4 +2,5 @@ streamlit
 langchain-core
 langchain-openai
 langchain-google-genai
+langchain-chroma
 python-dotenv

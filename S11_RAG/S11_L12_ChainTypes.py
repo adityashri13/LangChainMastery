@@ -42,7 +42,7 @@ def generate_response(chain: Runnable, vector_store: Chroma, query: str):
 
 def main():
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    data_folder = 'input'
+    data_folder = 'data'
     file_name = 'SPORTS_INSPIRATIONAL_STORIES.pdf'
     pdf_path = os.path.join(script_directory, data_folder, file_name)
 
