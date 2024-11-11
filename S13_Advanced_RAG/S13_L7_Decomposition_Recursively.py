@@ -104,6 +104,30 @@ def format_qa_pair(question, answer):
     return formatted_string.strip()
 
 
+# Generate answers for each sub-question
+q_a_pairs = ""
+for q in questions:
+    print('---q')
+    print(q)
+    rag_chain = (
+        {"context": itemgetter("question") | retriever, 
+         "question": itemgetter("question"),
+         "q_a_pairs": itemgetter("q_a_pairs")} 
+        | decomposition_prompt
+        | ChatOpenAI(temperature=0)
+        | StrOutputParser()
+    )
+
+    answer = rag_chain.invoke({"question": q, "q_a_pairs": q_a_pairs})
+    print('---answer')
+    print(answer)
+    q_a_pair = format_qa_pair(q, answer)
+    q_a_pairs += "\n---\n" + q_a_pair
+
+print('-----final answer')
+print(answer)
+
+
 # # Generate answers for each sub-question
 # q_a_pairs = ""
 # for q in questions:
@@ -139,26 +163,3 @@ def format_qa_pair(question, answer):
 
 # print('-----final answer')
 # print(answer)
-
-# Generate answers for each sub-question
-q_a_pairs = ""
-for q in questions:
-    print('---q')
-    print(q)
-    rag_chain = (
-        {"context": itemgetter("question") | retriever, 
-         "question": itemgetter("question"),
-         "q_a_pairs": itemgetter("q_a_pairs")} 
-        | decomposition_prompt
-        | ChatOpenAI(temperature=0)
-        | StrOutputParser()
-    )
-
-    answer = rag_chain.invoke({"question": q, "q_a_pairs": q_a_pairs})
-    print('---answer')
-    print(answer)
-    q_a_pair = format_qa_pair(q, answer)
-    q_a_pairs += "\n---\n" + q_a_pair
-
-print('-----final answer')
-print(answer)
